@@ -1,0 +1,19 @@
+.flexRow {
+  display: flex;
+  flex-direction: row;
+}
+.flexCol {
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+}
+.flexAllCenter {
+  justify-content: center;
+  align-items: center;
+}
+.counterBody {
+  align-items: center;
+  font-weight: bold;
+  border: 1px solid black;
+  padding: 5px;
+}

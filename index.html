@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Webgl editor</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gl-matrix/2.8.1/gl-matrix-min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+  <body>
+    <div>
+      <div class="flexRow">
+        <div class="flexRow counterBody">
+          Number of current shapes: <p id="shapeCount">0</p>
+        </div>
+        <div class="flexRow counterBody">
+          Surface srea occupied by shapes: <p id="shapeArea">0</p>
+        </div>
+      </div>
+      <canvas id="glcanvas" width="600" height="600" style="border: 5px solid rgb(39, 39, 39)"></canvas>
+
+      <div class="flexRow">
+        <div class="flexCol">
+          <p>Number of Shapes/s</p>
+          <div class="flexRow flexAllCenter">
+            <button id="decreaseShapesPerSec">-</button>
+            <button id="increaseShapesPerSec">+</button>
+          </div>
+        </div>
+        <div class="flexCol">
+          <p>Gravity value</p>
+          <div class="flexRow flexAllCenter">
+            <button id="decreaseGravity">-</button>
+            <button id="increaseGravity">+</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="main.js" type="module" defer></script>
+
+  </body>
+</html>
